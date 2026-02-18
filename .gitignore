@@ -12,6 +12,7 @@ node_modules/
 # Build Artifacts
 dist/
 docs/
+*.tsbuildinfo
 *.zip
 *.tar
 *.tar.gz
@@ -20,3 +21,6 @@ docs/
 # Ignore package locks
 package-lock.json
 pnpm-lock.yaml
+
+# Ignore turbo cache
+.turbo
