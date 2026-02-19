@@ -38,9 +38,9 @@ jobs:
         env:
           GITHUB_USER: github-actions[bot]
           GITHUB_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.BOT_TOKEN  }}
 
       - name: Bump Version & Publish
         run: npx @favware/cliff-jumper
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.BOT_TOKEN  }}
