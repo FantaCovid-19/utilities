@@ -58,6 +58,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.BOT_TOKEN  }}
 
       - name: Bump Version & Publish
-        run: npx @favware/cliff-jumper
+        run: pnpm run bump
         env:
           GITHUB_TOKEN: ${{ secrets.BOT_TOKEN  }}
