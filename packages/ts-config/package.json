@@ -16,6 +16,24 @@
   "publishConfig": {
     "access": "public"
   },
+  "main": "src/tsconfig.json",
+  "exports": {
+    ".": {
+      "types": "./src/tsconfig.json",
+      "import": "./src/tsconfig.json",
+      "require": "./src/tsconfig.json"
+    },
+    "./base": {
+      "types": "./src/tsconfig.json",
+      "import": "./src/tsconfig.json",
+      "require": "./src/tsconfig.json"
+    },
+    "./extra-strict": {
+      "types": "./src/extraStrict.json",
+      "import": "./src/extraStrict.json",
+      "require": "./src/extraStrict.json"
+    }
+  },
   "files": [
     "src"
   ],
