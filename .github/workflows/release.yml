@@ -59,5 +59,6 @@ jobs:
 
       - name: Bump Version & Publish
         run: pnpm run bump
+        working-directory: ./packages/${{ inputs.package }}
         env:
           GITHUB_TOKEN: ${{ secrets.BOT_TOKEN  }}
