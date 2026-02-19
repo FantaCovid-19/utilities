@@ -1,9 +1,22 @@
 name: Release
 
 on:
-  push:
-    branches:
-      - main
+  workflow_call:
+    inputs:
+      ref:
+        description: "The branch or tag to release from"
+        required: true
+        default: "main"
+        type: string
+  workflow_dispatch:
+    inputs:
+      package:
+        description: "The package to release (optional, defaults to all packages)"
+        required: true
+        type: choice
+        options:
+          - all
+          - ts-config
 
 permissions:
   contents: read
@@ -20,15 +33,19 @@ jobs:
       id-token: write
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
+      - name: Checkout Project
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
+          ref: main
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
           version: 10.30.0
+
+      - name: Install Dependencies
+        run: pnpm install
 
       - name: Configure Git
         run: |
