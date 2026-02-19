@@ -5,11 +5,14 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "turbo run build"
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "dev": "turbo run dev"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.4.1",
     "@commitlint/config-conventional": "^20.4.1",
+    "@favware/cliff-jumper": "^6.0.0",
     "@types/node": "^25.2.3",
     "eslint": "^10.0.0",
     "eslint-config-prettier": "^10.1.8",
