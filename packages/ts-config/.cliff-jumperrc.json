@@ -1,8 +1,8 @@
 {
   "$schema": "https://raw.githubusercontent.com/favware/cliff-jumper/main/assets/cliff-jumper.schema.json",
   "name": "ts-config",
-  "packagePath": "packages/ts-config",
   "install": true,
+  "packagePath": "packages/ts-config",
   "identifierBase": false,
   "pushTag": true,
   "githubRelease": true,
