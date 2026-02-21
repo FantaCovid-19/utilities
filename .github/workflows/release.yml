@@ -22,7 +22,7 @@ jobs:
     with:
       project-name: "@fantacovid-19/${{ inputs.package }}"
       working-directory: "packages/${{ inputs.package }}"
-      pnpm-version: 10.30.0
+      pnpm-version: "10.30.0"
     secrets:
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
