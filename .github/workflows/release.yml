@@ -10,6 +10,11 @@ on:
         type: choice
         options:
           - ts-config
+      skip-version-bump:
+        description: "Whether to skip version bumping (optional, defaults to false)"
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: write
@@ -20,8 +25,10 @@ jobs:
     name: Publish @fantacovid-19/${{ inputs.package }}
     uses: FantaCovid-19/FantaCovid-19/.github/workflows/reusable-publish.yml@main
     with:
+      build: true
       project-name: "@fantacovid-19/${{ inputs.package }}"
       working-directory: "packages/${{ inputs.package }}"
+      skip-version-bump: ${{ inputs.skip-version-bump }}
       pnpm-version: "10.30.0"
     secrets:
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
