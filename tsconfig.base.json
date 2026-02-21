@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "./packages/ts-config/src/tsconfig.json",
+    "./packages/ts-config/src/extraStrict.json"
+  ],
+  "compilerOptions": {
+    "incremental": false,
+    "noEmit": true
+  }
+}
