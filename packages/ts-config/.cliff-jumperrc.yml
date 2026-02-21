@@ -1,0 +1,10 @@
+name: ts-config
+org: fantacovid-19
+install: true
+packagePath: packages/ts-config
+identifierBase: false
+pushTag: true
+githubRelease: true
+githubReleaseLatest: true
+gitRepo: fantacovid-19/utilities
+gitHostVariant: github
