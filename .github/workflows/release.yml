@@ -11,9 +11,6 @@ on:
         options:
           - ts-config
 
-permissions:
-  contents: read
-
 jobs:
   release:
     name: Publish @fantacovid-19/${{ inputs.package }}
