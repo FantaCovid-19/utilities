@@ -1,13 +1,7 @@
 name: Release
+run-name: Release @fantacovid-19/${{ inputs.package }}
 
 on:
-  workflow_call:
-    inputs:
-      ref:
-        description: "The branch or tag to release from"
-        required: true
-        default: "main"
-        type: string
   workflow_dispatch:
     inputs:
       package:
@@ -15,7 +9,6 @@ on:
         required: true
         type: choice
         options:
-          - all
           - ts-config
 
 permissions:
@@ -23,42 +16,11 @@ permissions:
 
 jobs:
   release:
-    name: Release
-    runs-on: ubuntu-latest
-
-    permissions:
-      contents: write
-      issues: write
-      pull-requests: write
-      id-token: write
-
-    steps:
-      - name: Checkout Project
-        uses: actions/checkout@v6
-        with:
-          fetch-depth: 0
-          ref: main
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 10.30.0
-
-      - name: Install Dependencies
-        run: pnpm install
-
-      - name: Configure Git
-        run: |
-          git remote set-url origin "https://${GITHUB_TOKEN}:x-oauth-basic@github.com/${GITHUB_REPOSITORY}.git"
-          git config --local user.email "${GITHUB_EMAIL}"
-          git config --local user.name "${GITHUB_USER}"
-        env:
-          GITHUB_USER: github-actions[bot]
-          GITHUB_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
-          GITHUB_TOKEN: ${{ secrets.BOT_TOKEN  }}
-
-      - name: Bump Version & Publish
-        run: pnpm run bump
-        working-directory: ./packages/${{ inputs.package }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.BOT_TOKEN  }}
+    name: Publish @fantacovid-19/${{ inputs.package }}
+    uses: FantaCovid-19/FantaCovid-19/.github/workflows/reusable-publish.yml@main
+    with:
+      project-name: "@fantacovid-19/${{ inputs.package }}"
+      working-directory: "packages/${{ inputs.package }}"
+    secrets:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
