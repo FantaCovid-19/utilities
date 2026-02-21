@@ -11,6 +11,10 @@ on:
         options:
           - ts-config
 
+permissions:
+  contents: write
+  id-token: write
+
 jobs:
   release:
     name: Publish @fantacovid-19/${{ inputs.package }}
