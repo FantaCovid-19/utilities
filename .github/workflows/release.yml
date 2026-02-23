@@ -10,6 +10,8 @@ on:
         type: choice
         options:
           - ts-config
+          - eslint-config
+          - prettier-config
       skip-version-bump:
         description: "Whether to skip version bumping (optional, defaults to false)"
         required: false
