@@ -16,18 +16,33 @@
   "publishConfig": {
     "access": "public"
   },
+  "main": "dist/cjs/index.cjs",
+  "module": "dist/esm/index.mjs",
+  "exports": {
+    "import": {
+      "default": "./dist/esm/index.mjs"
+    },
+    "require": {
+      "default": "./dist/cjs/index.cjs"
+    }
+  },
   "files": [
     "dist/"
   ],
+  "engines": {
+    "node": ">=22.19.0",
+    "npm": ">=11.6.0"
+  },
   "scripts": {
     "test": "vitest run",
-    "build": "tsc -b tests",
+    "build": "tsup",
+    "prelint": "pnpm test && pnpm build",
+    "prepack": "pnpm build",
     "bump": "cliff-jumper",
     "check-update": "cliff-jumper --dry-run"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^8.56.0",
-    "@typescript-eslint/parser": "^8.56.0",
+    "typescript-eslint": "^8.56.0",
     "@eslint/js": "^10.0.1",
     "eslint": "^10.0.1",
     "eslint-config-prettier": "^10.1.8",
