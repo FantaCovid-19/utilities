@@ -23,3 +23,7 @@ package-lock.json
 
 # Ignore turbo cache
 .turbo
+
+# Ignore vitest cache
+__snapshots__
+coverage/
