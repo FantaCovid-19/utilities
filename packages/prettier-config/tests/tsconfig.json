@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "../../ts-config/src/tsconfig.json",
+    "../../ts-config/src/extraStrict.json"
+  ],
+  "compilerOptions": {
+    "noEmit": true,
+    "incremental": false,
+    "moduleResolution": "node16",
+    "types": ["vitest/globals"]
+  },
+  "include": ["./"]
+}
