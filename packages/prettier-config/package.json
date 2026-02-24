@@ -3,7 +3,7 @@
   "description": "Prettier configuration for Fantacovid-19 projects",
   "author": "@fantacovid-19",
   "license": "MIT",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/fantacovid-19/utilities/tree/main/packages/prettier-config",
   "repository": {
     "type": "git",

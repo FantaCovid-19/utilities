@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+# [@fantacovid-19/prettier-config@0.1.1](https://github.com/fantacovid-19/utilities/compare/@fantacovid-19/prettier-config@0.1.0...@fantacovid-19/prettier-config@0.1.1) - (2026-02-24)
+
+## 🐛 Bug Fixes
+
+- **prettier-config:** Exports config ([53b2448](https://github.com/fantacovid-19/utilities/commit/53b2448b3807402d39f1beaeb83ae7a41084f420))
+- **prettier-config:** Adds exports field ([401939b](https://github.com/fantacovid-19/utilities/commit/401939b23510cb34c00fb2317a248aaa03715991))
+
 # [@fantacovid-19/prettier-config@0.1.0](https://github.com/fantacovid-19/utilities/tree/@fantacovid-19/prettier-config@0.1.0) - (2026-02-24)
 
 ## 🚀 Features
