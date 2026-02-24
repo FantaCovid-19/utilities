@@ -1,0 +1,16 @@
+{
+  "extends": [
+    "../../ts-config/src/tsconfig.json",
+    "../../ts-config/src/extraStrict.json"
+  ],
+  "compilerOptions": {
+    "rootDir": "./",
+    "outDir": "../dist",
+    "incremental": false,
+    "declaration": false,
+    "sourceMap": false,
+    "declarationMap": false,
+    "moduleResolution": "node16"
+  },
+  "include": ["."]
+}
