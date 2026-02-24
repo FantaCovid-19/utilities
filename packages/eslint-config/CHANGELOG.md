@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+# [@fantacovid-19/eslint-config@0.2.1](https://github.com/fantacovid-19/utilities/compare/@fantacovid-19/eslint-config@0.2.0...@fantacovid-19/eslint-config@0.2.1) - (2026-02-24)
+
+## 📝 Documentation
+
+- **eslint-config:** Adds README for ESLint config ([3efc31b](https://github.com/fantacovid-19/utilities/commit/3efc31bb57a62d1910259a2a389ec4cf13048533))
+- Update README.md with ESLint configuration details and installation instructions ([cdd82bd](https://github.com/fantacovid-19/utilities/commit/cdd82bd467caf5715ba7a445f302cfed5eadd869))
+
 # [@fantacovid-19/eslint-config@0.2.0](https://github.com/fantacovid-19/utilities/tree/@fantacovid-19/eslint-config@0.2.0) - (2026-02-23)
 
 ## 🚀 Features
