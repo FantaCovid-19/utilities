@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+# [@fantacovid-19/ts-config@0.4.1](https://github.com/fantacovid-19/utilities/compare/@fantacovid-19/ts-config@0.4.0...@fantacovid-19/ts-config@0.4.1) - (2026-02-24)
+
+## 📝 Documentation
+
+- **ts-config:** Adds ts-config package README ([2156372](https://github.com/fantacovid-19/utilities/commit/21563721e73c254adca9a508e6aca57ee970090a))
+- Update README.md with installation and usage instructions ([a8ef296](https://github.com/fantacovid-19/utilities/commit/a8ef296fadd9705f8692b67fe022dbcc53be01af))
+
 # [@fantacovid-19/ts-config@0.4.0](https://github.com/fantacovid-19/utilities/tree/@fantacovid-19/ts-config@0.4.0) - (2026-02-21)
 
 ## 🐛 Bug Fixes

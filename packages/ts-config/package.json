@@ -3,7 +3,7 @@
   "description": "Typescript configuration for Fantacovid-19 projects",
   "author": "@fantacovid-19",
   "license": "MIT",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "homepage": "https://github.com/FantaCovid-19/utilities/tree/main/packages/ts-config",
   "repository": {
     "type": "git",
