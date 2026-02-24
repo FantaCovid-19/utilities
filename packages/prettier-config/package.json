@@ -23,7 +23,14 @@
     "node": ">=22.19.0",
     "npm": ">=11.6.0"
   },
-  "scripts": {},
+  "scripts": {
+    "test": "vitest run",
+    "lint": "pnpm test && pnpm build && eslint src tests --ext ts --fix -c ../../eslint.config.mjs",
+    "build": "tsc -b src",
+    "prepack": "pnpm build",
+    "bump": "cliff-jumper",
+    "check-update": "cliff-jumper --dry-run"
+  },
   "dependencies": {
     "prettier": "^3.8.1"
   },
