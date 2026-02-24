@@ -1,0 +1,37 @@
+{
+  "name": "@fantacovid-19/prettier-config",
+  "description": "Prettier configuration for Fantacovid-19 projects",
+  "author": "@fantacovid-19",
+  "license": "MIT",
+  "version": "0.0.0",
+  "homepage": "https://github.com/fantacovid-19/utilities/tree/main/packages/prettier-config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fantacovid-19/utilities.git",
+    "directory": "packages/prettier-config"
+  },
+  "bugs": {
+    "url": "https://github.com/fantacovid-19/utilities/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist/"
+  ],
+  "engines": {
+    "node": ">=22.19.0",
+    "npm": ">=11.6.0"
+  },
+  "scripts": {},
+  "dependencies": {
+    "prettier": "^3.8.1"
+  },
+  "devDependencies": {
+    "@favware/cliff-jumper": "^6.0.0",
+    "@vitest/coverage-v8": "^4.0.18",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  },
+  "packageManager": "pnpm@10.30.0"
+}
